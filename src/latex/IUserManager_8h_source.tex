@@ -1,0 +1,43 @@
+\doxysection{IUser\+Manager.\+h}
+\hypertarget{IUserManager_8h_source}{}\label{IUserManager_8h_source}\mbox{\hyperlink{IUserManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Configuração\ de\ visibilidade\ para\ Linux/Windows}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#if\ defined(\_WIN32)\ ||\ defined(\_WIN64)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ USERDLL\_EXPORTS}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ USER\_API\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ USER\_API\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#define\ USER\_API\ \_\_attribute\_\_((visibility("{}default"{})))}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structUserData}{UserData}}\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ \mbox{\hyperlink{structUserData_a212bb297ad49d838e23e05eb67e68be3}{nome}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ \mbox{\hyperlink{structUserData_a59cb606c0259cb7c97e9a75ba4d17270}{telegramID}};\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ \mbox{\hyperlink{structUserData_a008d24b5f856eafaaddc82231a1cf452}{dataCadastro}};\ \ \ }
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIUserManager}{IUserManager}}\ \{}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classIUserManager_a919bd3fb056b93f957f247ef7c73936c}{\string~IUserManager}}()\ \{\}}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIUserManager_a08caa2d869f63b13d9d6cb3c16f5329f}{AdicionarUsuario}}(\textcolor{keyword}{const}\ std::string\&\ nome,\ \textcolor{keyword}{const}\ std::string\&\ telegram,\ \textcolor{keyword}{const}\ std::string\&\ data)\ =\ 0;}
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIUserManager_ade5723bcab6a36bb02914220e2144a0c}{RemoverUsuario}}(\textcolor{keyword}{const}\ std::string\&\ telegramID)\ =\ 0;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<UserData>\ \mbox{\hyperlink{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484}{ListarUsuarios}}()\ =\ 0;}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}{USER\_API}}\ \mbox{\hyperlink{classIUserManager}{IUserManager}}*\ \mbox{\hyperlink{IUserManager_8h_a05920273da4e409efd9d76678a1155f4}{CreateManager}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}{USER\_API}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{IUserManager_8h_a6ca10f70a2312a15943ebdf192b30d6e}{DeleteManager}}(\mbox{\hyperlink{classIUserManager}{IUserManager}}*\ manager);}
+\DoxyCodeLine{00080\ \}}
+
+\end{DoxyCode}

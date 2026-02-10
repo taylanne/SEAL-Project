@@ -1,0 +1,141 @@
+\doxysection{IUser\+Manager Class Reference}
+\hypertarget{classIUserManager}{}\label{classIUserManager}\index{IUserManager@{IUserManager}}
+
+
+Interface abstrata para manipulação de usuários.  
+
+
+
+
+{\ttfamily \#include $<$IUser\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for IUser\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classIUserManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IUser\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classIUserManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIUserManager_a919bd3fb056b93f957f247ef7c73936c}{\texorpdfstring{$\sim$}{\string~}\+IUser\+Manager}} ()
+\item 
+virtual bool \mbox{\hyperlink{classIUserManager_a08caa2d869f63b13d9d6cb3c16f5329f}{Adicionar\+Usuario}} (const std\+::string \&nome, const std\+::string \&telegram, const std\+::string \&data)=0
+\begin{DoxyCompactList}\small\item\em Adiciona um novo usuário ao sistema. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIUserManager_ade5723bcab6a36bb02914220e2144a0c}{Remover\+Usuario}} (const std\+::string \&telegram\+ID)=0
+\begin{DoxyCompactList}\small\item\em Remove um usuário pelo ID. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structUserData}{User\+Data}} $>$ \mbox{\hyperlink{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484}{Listar\+Usuarios}} ()=0
+\begin{DoxyCompactList}\small\item\em Lista todos os usuários cadastrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface abstrata para manipulação de usuários. 
+
+
+\begin{DoxyItemize}
+\item Define o contrato que qualquer implementação de gerenciador deve seguir. Utiliza o padrão Factory para instanciação. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classIUserManager_a919bd3fb056b93f957f247ef7c73936c}\label{classIUserManager_a919bd3fb056b93f957f247ef7c73936c} 
+\index{IUserManager@{IUserManager}!````~IUserManager@{\texorpdfstring{$\sim$}{\string~}IUserManager}}
+\index{````~IUserManager@{\texorpdfstring{$\sim$}{\string~}IUserManager}!IUserManager@{IUserManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IUserManager()}{\string~IUserManager()}}
+{\footnotesize\ttfamily virtual IUser\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+IUser\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIUserManager_a08caa2d869f63b13d9d6cb3c16f5329f}\label{classIUserManager_a08caa2d869f63b13d9d6cb3c16f5329f} 
+\index{IUserManager@{IUserManager}!AdicionarUsuario@{AdicionarUsuario}}
+\index{AdicionarUsuario@{AdicionarUsuario}!IUserManager@{IUserManager}}
+\doxysubsubsection{\texorpdfstring{AdicionarUsuario()}{AdicionarUsuario()}}
+{\footnotesize\ttfamily virtual bool IUser\+Manager\+::\+Adicionar\+Usuario (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{telegram,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adiciona um novo usuário ao sistema. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome completo do morador. \\
+\hline
+{\em telegram} & ID do Telegram (deve ser único). \\
+\hline
+{\em data} & Data de cadastro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se cadastrado com sucesso. 
+
+false Se o ID já existir na lista. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserManager_aca3ffd6c9c85bd1719ebb01e8f960600}{User\+Manager}}.
+
+\Hypertarget{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484}\label{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484} 
+\index{IUserManager@{IUserManager}!ListarUsuarios@{ListarUsuarios}}
+\index{ListarUsuarios@{ListarUsuarios}!IUserManager@{IUserManager}}
+\doxysubsubsection{\texorpdfstring{ListarUsuarios()}{ListarUsuarios()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{structUserData}{User\+Data}} $>$ IUser\+Manager\+::\+Listar\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista todos os usuários cadastrados. 
+
+\begin{DoxyReturn}{Returns}
+Um vetor contendo estruturas \doxylink{structUserData}{User\+Data}. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classUserManager_ac3ffad2f7df819adc59493ee38c79d51}{User\+Manager}}.
+
+\Hypertarget{classIUserManager_ade5723bcab6a36bb02914220e2144a0c}\label{classIUserManager_ade5723bcab6a36bb02914220e2144a0c} 
+\index{IUserManager@{IUserManager}!RemoverUsuario@{RemoverUsuario}}
+\index{RemoverUsuario@{RemoverUsuario}!IUserManager@{IUserManager}}
+\doxysubsubsection{\texorpdfstring{RemoverUsuario()}{RemoverUsuario()}}
+{\footnotesize\ttfamily virtual bool IUser\+Manager\+::\+Remover\+Usuario (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{telegram\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove um usuário pelo ID. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em telegram\+ID} & O ID do usuário a ser removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se o usuário foi encontrado e removido. 
+
+false Se o usuário não existe. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserManager_afa4e1d0418bc110458051b4306ab825a}{User\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{IUserManager_8h}{IUser\+Manager.\+h}}\end{DoxyCompactItemize}

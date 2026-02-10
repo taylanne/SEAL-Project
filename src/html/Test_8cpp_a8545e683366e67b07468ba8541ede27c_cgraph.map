@@ -1,0 +1,9 @@
+<map id="TestarCenarioAugusto" name="TestarCenarioAugusto">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,169,80"/>
+<area shape="rect" id="Node000002" href="$classIUserManager.html#a08caa2d869f63b13d9d6cb3c16f5329f" title="Adiciona um novo usuário ao sistema." alt="" coords="217,5,449,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,52,256,31,257,36,152,57"/>
+<area shape="rect" id="Node000003" href="$classIUserManager.html#a57f52c374f4bb0fa4cfd8a0dd5d37484" title="Lista todos os usuários cadastrados." alt="" coords="226,55,441,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,65,213,65,213,70,169,70"/>
+<area shape="rect" id="Node000004" href="$Test_8cpp.html#a5c783cb8e7c8a96e76121120470d6406" title=" " alt="" coords="311,104,356,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,77,298,107,297,112,151,83"/>
+</map>

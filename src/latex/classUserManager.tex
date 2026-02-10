@@ -1,0 +1,146 @@
+\doxysection{User\+Manager Class Reference}
+\hypertarget{classUserManager}{}\label{classUserManager}\index{UserManager@{UserManager}}
+
+
+Implementação concreta da interface \doxylink{classIUserManager}{IUser\+Manager}.  
+
+
+
+
+Inheritance diagram for User\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classUserManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for User\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classUserManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classUserManager_aca3ffd6c9c85bd1719ebb01e8f960600}{Adicionar\+Usuario}} (const std\+::string \&nome, const std\+::string \&telegram, const std\+::string \&data) override
+\begin{DoxyCompactList}\small\item\em Implementação da adição de usuário com verificação de unicidade. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserManager_afa4e1d0418bc110458051b4306ab825a}{Remover\+Usuario}} (const std\+::string \&telegram\+ID) override
+\begin{DoxyCompactList}\small\item\em Remove um usuário utilizando o idioma Erase-\/\+Remove. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structUserData}{User\+Data}} $>$ \mbox{\hyperlink{classUserManager_ac3ffad2f7df819adc59493ee38c79d51}{Listar\+Usuarios}} () override
+\begin{DoxyCompactList}\small\item\em Retorna uma cópia da lista atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classIUserManager}{IUser\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIUserManager_a919bd3fb056b93f957f247ef7c73936c}{\texorpdfstring{$\sim$}{\string~}\+IUser\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structUserData}{User\+Data}} $>$ \mbox{\hyperlink{classUserManager_a9aaa4cab2520cc7834590a5fae24ef0b}{lista\+Usuarios}}
+\begin{DoxyCompactList}\small\item\em Lista dinâmica para armazenar os usuários. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação concreta da interface \doxylink{classIUserManager}{IUser\+Manager}. 
+
+
+\begin{DoxyItemize}
+\item Esta classe é responsável por manter o estado da lista de usuários durante a execução do programa. Ela não é exposta diretamente no header, garantindo o encapsulamento (Pattern Pimpl/\+Interface). 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUserManager_aca3ffd6c9c85bd1719ebb01e8f960600}\label{classUserManager_aca3ffd6c9c85bd1719ebb01e8f960600} 
+\index{UserManager@{UserManager}!AdicionarUsuario@{AdicionarUsuario}}
+\index{AdicionarUsuario@{AdicionarUsuario}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{AdicionarUsuario()}{AdicionarUsuario()}}
+{\footnotesize\ttfamily bool User\+Manager\+::\+Adicionar\+Usuario (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{telegram,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementação da adição de usuário com verificação de unicidade. 
+
+Realiza uma busca linear O(\+N) para garantir que o Telegram\+ID não existe antes de inserir.
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do morador. \\
+\hline
+{\em telegram} & ID único. \\
+\hline
+{\em data} & Data de registro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se inserido, false se duplicado. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classIUserManager_a08caa2d869f63b13d9d6cb3c16f5329f}{IUser\+Manager}}.
+
+\Hypertarget{classUserManager_ac3ffad2f7df819adc59493ee38c79d51}\label{classUserManager_ac3ffad2f7df819adc59493ee38c79d51} 
+\index{UserManager@{UserManager}!ListarUsuarios@{ListarUsuarios}}
+\index{ListarUsuarios@{ListarUsuarios}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{ListarUsuarios()}{ListarUsuarios()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structUserData}{User\+Data}} $>$ User\+Manager\+::\+Listar\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retorna uma cópia da lista atual. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+User\+Data$>$ contendo todos os registros. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484}{IUser\+Manager}}.
+
+\Hypertarget{classUserManager_afa4e1d0418bc110458051b4306ab825a}\label{classUserManager_afa4e1d0418bc110458051b4306ab825a} 
+\index{UserManager@{UserManager}!RemoverUsuario@{RemoverUsuario}}
+\index{RemoverUsuario@{RemoverUsuario}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{RemoverUsuario()}{RemoverUsuario()}}
+{\footnotesize\ttfamily bool User\+Manager\+::\+Remover\+Usuario (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{telegram\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove um usuário utilizando o idioma Erase-\/\+Remove. 
+
+Utiliza std\+::remove\+\_\+if para reordenar o vetor e vector\+::erase para remover os elementos excedentes. Complexidade O(\+N).
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em telegram\+ID} & A chave de busca para remoção. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se encontrou e removeu, false caso contrário. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classIUserManager_ade5723bcab6a36bb02914220e2144a0c}{IUser\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classUserManager_a9aaa4cab2520cc7834590a5fae24ef0b}\label{classUserManager_a9aaa4cab2520cc7834590a5fae24ef0b} 
+\index{UserManager@{UserManager}!listaUsuarios@{listaUsuarios}}
+\index{listaUsuarios@{listaUsuarios}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{listaUsuarios}{listaUsuarios}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structUserData}{User\+Data}}$>$ User\+Manager\+::lista\+Usuarios\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista dinâmica para armazenar os usuários. 
+
+Utiliza std\+::vector para armazenamento sequencial em memória. Os dados são perdidos quando o programa é fechado. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{UserManager_8cpp}{User\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,60,105"/>
+<area shape="rect" id="Node000002" href="$UserManager_8cpp.html#adede2d39d7e74b36493861bdf835e136" title="Cria uma instância do Gerenciador." alt="" coords="144,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,77,74,58,107,40,130,31,132,36,109,44,77,62,51,82"/>
+<area shape="rect" id="Node000003" href="$UserManager_8cpp.html#a0e085069a45e0c95c30011bfb4461c2d" title="Destrói a instância e libera memória." alt="" coords="144,55,267,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,86,130,76,131,81,61,91"/>
+<area shape="rect" id="Node000004" href="$Test_8cpp.html#aa55800e998fa564fc3c03e307cdb8d84" title=" " alt="" coords="108,104,303,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,94,101,99,100,105,60,99"/>
+<area shape="rect" id="Node000008" href="$Test_8cpp.html#a8545e683366e67b07468ba8541ede27c" title=" " alt="" coords="123,153,287,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="52,104,78,121,109,138,132,147,130,152,107,143,76,126,49,108"/>
+<area shape="rect" id="Node000005" href="$classIUserManager.html#a08caa2d869f63b13d9d6cb3c16f5329f" title="Adiciona um novo usuário ao sistema." alt="" coords="351,79,583,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="303,105,337,101,337,107,303,110"/>
+<area shape="rect" id="Node000006" href="$classIUserManager.html#a57f52c374f4bb0fa4cfd8a0dd5d37484" title="Lista todos os usuários cadastrados." alt="" coords="359,128,574,153"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="303,123,346,127,345,132,303,128"/>
+<area shape="rect" id="Node000007" href="$Test_8cpp.html#a5c783cb8e7c8a96e76121120470d6406" title=" " alt="" coords="444,177,489,203"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="267,127,304,138,328,150,352,162,431,182,430,187,350,167,325,155,302,143,265,132"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="263,151,302,138,325,125,350,113,375,105,377,110,352,118,328,130,304,143,265,156"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="287,155,345,150,346,155,288,161"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="288,171,430,184,430,189,287,176"/>
+</map>

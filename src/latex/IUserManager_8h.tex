@@ -1,0 +1,106 @@
+\doxysection{IUser\+Manager.\+h File Reference}
+\hypertarget{IUserManager_8h}{}\label{IUserManager_8h}\index{IUserManager.h@{IUserManager.h}}
+
+
+Interface para o sistema de gerenciamento de usuários.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for IUser\+Manager.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{IUserManager_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{IUserManager_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structUserData}{User\+Data}}
+\begin{DoxyCompactList}\small\item\em Estrutura simples para transportar dados do usuário (DTO). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classIUserManager}{IUser\+Manager}}
+\begin{DoxyCompactList}\small\item\em Interface abstrata para manipulação de usuários. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}{USER\+\_\+\+API}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility("{}default"{})))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}{USER\+\_\+\+API}} \mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{IUserManager_8h_a05920273da4e409efd9d76678a1155f4}{Create\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Cria uma instância do Gerenciador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}{USER\+\_\+\+API}} void \mbox{\hyperlink{IUserManager_8h_a6ca10f70a2312a15943ebdf192b30d6e}{Delete\+Manager}} (\mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*}manager)
+\begin{DoxyCompactList}\small\item\em Destrói a instância e libera memória. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface para o sistema de gerenciamento de usuários. 
+
+\begin{DoxyAuthor}{Author}
+Seu Nome 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}\label{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66} 
+\index{IUserManager.h@{IUserManager.h}!USER\_API@{USER\_API}}
+\index{USER\_API@{USER\_API}!IUserManager.h@{IUserManager.h}}
+\doxysubsubsection{\texorpdfstring{USER\_API}{USER\_API}}
+{\footnotesize\ttfamily \#define USER\+\_\+\+API~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility("{}default"{})))}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{IUserManager_8h_a05920273da4e409efd9d76678a1155f4}\label{IUserManager_8h_a05920273da4e409efd9d76678a1155f4} 
+\index{IUserManager.h@{IUserManager.h}!CreateManager@{CreateManager}}
+\index{CreateManager@{CreateManager}!IUserManager.h@{IUserManager.h}}
+\doxysubsubsection{\texorpdfstring{CreateManager()}{CreateManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}{USER\+\_\+\+API}} \mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*} Create\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria uma instância do Gerenciador. 
+
+\begin{DoxyReturn}{Returns}
+Ponteiro para a interface \doxylink{classIUserManager}{IUser\+Manager}.
+\end{DoxyReturn}
+Cria uma instância do Gerenciador.
+
+\begin{DoxyReturn}{Returns}
+Ponteiro para a interface genérica. 
+\end{DoxyReturn}
+\Hypertarget{IUserManager_8h_a6ca10f70a2312a15943ebdf192b30d6e}\label{IUserManager_8h_a6ca10f70a2312a15943ebdf192b30d6e} 
+\index{IUserManager.h@{IUserManager.h}!DeleteManager@{DeleteManager}}
+\index{DeleteManager@{DeleteManager}!IUserManager.h@{IUserManager.h}}
+\doxysubsubsection{\texorpdfstring{DeleteManager()}{DeleteManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{IUserManager_8h_a3b9cbc54f1c3c947cde09fce2abe9a66}{USER\+\_\+\+API}} void Delete\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*}}]{manager }\end{DoxyParamCaption})}
+
+
+
+Destrói a instância e libera memória. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & Ponteiro para o gerenciador a ser destruído.\\
+\hline
+\end{DoxyParams}
+Destrói a instância e libera memória.
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & Ponteiro para a instância a ser deletada. \\
+\hline
+\end{DoxyParams}

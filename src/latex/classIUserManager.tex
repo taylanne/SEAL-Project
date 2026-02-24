@@ -2,11 +2,6 @@
 \hypertarget{classIUserManager}{}\label{classIUserManager}\index{IUserManager@{IUserManager}}
 
 
-Interface abstrata para manipulação de usuários.  
-
-
-
-
 {\ttfamily \#include $<$IUser\+Manager.\+h$>$}
 
 
@@ -21,7 +16,8 @@ Inheritance diagram for IUser\+Manager\+:
 \end{figure}
 
 
-Collaboration diagram for IUser\+Manager\+:\nopagebreak
+Collaboration diagram for IUser\+Manager\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,20 +30,12 @@ Collaboration diagram for IUser\+Manager\+:\nopagebreak
 virtual \mbox{\hyperlink{classIUserManager_a919bd3fb056b93f957f247ef7c73936c}{\texorpdfstring{$\sim$}{\string~}\+IUser\+Manager}} ()
 \item 
 virtual bool \mbox{\hyperlink{classIUserManager_a08caa2d869f63b13d9d6cb3c16f5329f}{Adicionar\+Usuario}} (const std\+::string \&nome, const std\+::string \&telegram, const std\+::string \&data)=0
-\begin{DoxyCompactList}\small\item\em Adiciona um novo usuário ao sistema. \end{DoxyCompactList}\item 
+\item 
 virtual bool \mbox{\hyperlink{classIUserManager_ade5723bcab6a36bb02914220e2144a0c}{Remover\+Usuario}} (const std\+::string \&telegram\+ID)=0
-\begin{DoxyCompactList}\small\item\em Remove um usuário pelo ID. \end{DoxyCompactList}\item 
+\item 
 virtual std\+::vector$<$ \mbox{\hyperlink{structUserData}{User\+Data}} $>$ \mbox{\hyperlink{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484}{Listar\+Usuarios}} ()=0
-\begin{DoxyCompactList}\small\item\em Lista todos os usuários cadastrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 
-
-\doxysubsection{Detailed Description}
-Interface abstrata para manipulação de usuários. 
-
-
-\begin{DoxyItemize}
-\item Define o contrato que qualquer implementação de gerenciador deve seguir. Utiliza o padrão Factory para instanciação. 
-\end{DoxyItemize}
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classIUserManager_a919bd3fb056b93f957f247ef7c73936c}\label{classIUserManager_a919bd3fb056b93f957f247ef7c73936c} 
@@ -67,27 +55,6 @@ Interface abstrata para manipulação de usuários.
 
 
 
-Adiciona um novo usuário ao sistema. 
-
-
-\begin{DoxyItemize}
-\item 
-\begin{DoxyParams}{Parameters}
-{\em nome} & Nome completo do morador. \\
-\hline
-{\em telegram} & ID do Telegram (deve ser único). \\
-\hline
-{\em data} & Data de cadastro. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-true Se cadastrado com sucesso. 
-
-false Se o ID já existir na lista. 
-\end{DoxyReturn}
-
-\end{DoxyItemize}
-
 Implemented in \mbox{\hyperlink{classUserManager_aca3ffd6c9c85bd1719ebb01e8f960600}{User\+Manager}}.
 
 \Hypertarget{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484}\label{classIUserManager_a57f52c374f4bb0fa4cfd8a0dd5d37484} 
@@ -96,13 +63,6 @@ Implemented in \mbox{\hyperlink{classUserManager_aca3ffd6c9c85bd1719ebb01e8f9606
 \doxysubsubsection{\texorpdfstring{ListarUsuarios()}{ListarUsuarios()}}
 {\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{structUserData}{User\+Data}} $>$ IUser\+Manager\+::\+Listar\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-
-
-Lista todos os usuários cadastrados. 
-
-\begin{DoxyReturn}{Returns}
-Um vetor contendo estruturas \doxylink{structUserData}{User\+Data}. 
-\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classUserManager_ac3ffad2f7df819adc59493ee38c79d51}{User\+Manager}}.
@@ -114,23 +74,6 @@ Implemented in \mbox{\hyperlink{classUserManager_ac3ffad2f7df819adc59493ee38c79d
 {\footnotesize\ttfamily virtual bool IUser\+Manager\+::\+Remover\+Usuario (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{telegram\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
-
-Remove um usuário pelo ID. 
-
-
-\begin{DoxyItemize}
-\item 
-\begin{DoxyParams}{Parameters}
-{\em telegram\+ID} & O ID do usuário a ser removido. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-true Se o usuário foi encontrado e removido. 
-
-false Se o usuário não existe. 
-\end{DoxyReturn}
-
-\end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classUserManager_afa4e1d0418bc110458051b4306ab825a}{User\+Manager}}.
 

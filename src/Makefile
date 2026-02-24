@@ -1,48 +1,22 @@
-# Makefile Linux com Testes
-
+# Compilador e Flags
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17 -fPIC
+CXXFLAGS = -Wall -fPIC -std=c++17
 
-# Nomes
-LIB_NAME = libUserLib.so
-EXE_NAME = programa
-TEST_NAME = test_runner
+# O alvo padrão compila o executável principal
+all: programa
 
-# Regra padrão: compila tudo
-all: $(EXE_NAME) $(TEST_NAME)
+# 1. Cria a DLL de Moradores
+libUserLib.so: UserManager.cpp
+	$(CXX) $(CXXFLAGS) -shared -o libUserLib.so UserManager.cpp
 
-# --- PROGRAMA PRINCIPAL ---
-$(EXE_NAME): Main.o $(LIB_NAME)
-	@echo "--- Linkando Programa Principal ---"
-	$(CXX) Main.o -o $(EXE_NAME) -L. -lUserLib -Wl,-rpath=.
+# 2. Cria a DLL de Cômodos
+libRoomLib.so: RoomManager.cpp
+	$(CXX) $(CXXFLAGS) -shared -o libRoomLib.so RoomManager.cpp
 
-Main.o: Main.cpp IUserManager.h
-	$(CXX) $(CXXFLAGS) -c Main.cpp -o Main.o
+# 3. Compila o Main e linka as duas bibliotecas
+programa: Main.cpp libUserLib.so libRoomLib.so
+	$(CXX) -Wall -std=c++17 Main.cpp -o programa -L. -lUserLib -lRoomLib -Wl,-rpath=.
 
-# --- TESTES AUTOMATIZADOS ---
-$(TEST_NAME): Test.o $(LIB_NAME)
-	@echo "--- Linkando Test Runner ---"
-	$(CXX) Test.o -o $(TEST_NAME) -L. -lUserLib -Wl,-rpath=.
-
-Test.o: Test.cpp IUserManager.h
-	$(CXX) $(CXXFLAGS) -c Test.cpp -o Test.o
-
-# --- BIBLIOTECA COMPARTILHADA (.so) ---
-$(LIB_NAME): UserManager.o
-	@echo "--- Gerando Shared Library ---"
-	$(CXX) -shared -o $(LIB_NAME) UserManager.o
-
-UserManager.o: UserManager.cpp IUserManager.h
-	$(CXX) $(CXXFLAGS) -c UserManager.cpp -o UserManager.o
-
-# --- COMANDOS ÚTEIS ---
+# Limpeza
 clean:
-	rm -f *.o *.so $(EXE_NAME) $(TEST_NAME)
-
-# Roda o programa interativo
-run: $(EXE_NAME)
-	./$(EXE_NAME)
-
-# Roda os testes automatizados
-test: $(TEST_NAME)
-	./$(TEST_NAME)
+	rm -f *.o *.so programa

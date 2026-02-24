@@ -2,10 +2,10 @@
 \hypertarget{UserManager_8cpp}{}\label{UserManager_8cpp}\index{UserManager.cpp@{UserManager.cpp}}
 
 
-Implementação concreta da lógica de gerenciamento de usuários.  
+Implementação da lógica.  
 
 
-{\ttfamily \#include "{}IUser\+Manager.\+h"{}}\newline
+{\ttfamily \#include "{}User\+Manager.\+h"{}}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$algorithm$>$}\newline
 Include dependency graph for User\+Manager.\+cpp\+:
@@ -13,32 +13,21 @@ Include dependency graph for User\+Manager.\+cpp\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=341pt]{UserManager_8cpp__incl}
+\includegraphics[width=350pt]{UserManager_8cpp__incl}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-class \mbox{\hyperlink{classUserManager}{User\+Manager}}
-\begin{DoxyCompactList}\small\item\em Implementação concreta da interface \doxylink{classIUserManager}{IUser\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{UserManager_8cpp_adede2d39d7e74b36493861bdf835e136}{Create\+Manager}} ()
-\begin{DoxyCompactList}\small\item\em Aloca uma nova instância de \doxylink{classUserManager}{User\+Manager} na memória Heap. \end{DoxyCompactList}\item 
+\item 
 void \mbox{\hyperlink{UserManager_8cpp_a0e085069a45e0c95c30011bfb4461c2d}{Delete\+Manager}} (\mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*}manager)
-\begin{DoxyCompactList}\small\item\em Libera a memória alocada para o gerenciador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Implementação concreta da lógica de gerenciamento de usuários. 
+Implementação da lógica. 
 
-Este arquivo contém a classe oculta \doxylink{classUserManager}{User\+Manager} e as funções de fábrica. A implementação utiliza um std\+::vector para armazenamento volátil (RAM). \begin{DoxyAuthor}{Author}
-Seu Nome 
-\end{DoxyAuthor}
-\begin{DoxyDate}{Date}
-2025 
-\end{DoxyDate}
 
 
 \doxysubsection{Function Documentation}
@@ -48,29 +37,9 @@ Seu Nome
 \doxysubsubsection{\texorpdfstring{CreateManager()}{CreateManager()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*} Create\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
-
-Aloca uma nova instância de \doxylink{classUserManager}{User\+Manager} na memória Heap. 
-
-Cria uma instância do Gerenciador.
-
-\begin{DoxyReturn}{Returns}
-Ponteiro para a interface genérica. 
-\end{DoxyReturn}
 \Hypertarget{UserManager_8cpp_a0e085069a45e0c95c30011bfb4461c2d}\label{UserManager_8cpp_a0e085069a45e0c95c30011bfb4461c2d} 
 \index{UserManager.cpp@{UserManager.cpp}!DeleteManager@{DeleteManager}}
 \index{DeleteManager@{DeleteManager}!UserManager.cpp@{UserManager.cpp}}
 \doxysubsubsection{\texorpdfstring{DeleteManager()}{DeleteManager()}}
 {\footnotesize\ttfamily void Delete\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIUserManager}{IUser\+Manager}} \texorpdfstring{$\ast$}{*}}]{manager }\end{DoxyParamCaption})}
 
-
-
-Libera a memória alocada para o gerenciador. 
-
-Destrói a instância e libera memória.
-
-
-\begin{DoxyParams}{Parameters}
-{\em manager} & Ponteiro para a instância a ser deletada. \\
-\hline
-\end{DoxyParams}

@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Interface para o sistema de gerenciamento de usuários.  
+<p>Interface (Contrato) que o mundo externo enxerga.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -86,7 +86,7 @@ Include dependency graph for IUserManager.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="IUserManager_8h__incl.png" border="0" usemap="#aIUserManager_8h" alt=""/></div>
 <map name="aIUserManager_8h" id="aIUserManager_8h">
-<area shape="rect" title="Interface para o sistema de gerenciamento de usuários." alt="" coords="15,5,139,31"/>
+<area shape="rect" title="Interface (Contrato) que o mundo externo enxerga." alt="" coords="15,5,139,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,64,104"/>
 <area shape="poly" title=" " alt="" coords="73,32,51,68,46,66,68,30"/>
 <area shape="rect" title=" " alt="" coords="89,79,151,104"/>
@@ -98,13 +98,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="IUserManager_8h__dep__incl.png" border="0" usemap="#aIUserManager_8hdep" alt=""/></div>
 <map name="aIUserManager_8hdep" id="aIUserManager_8hdep">
-<area shape="rect" title="Interface para o sistema de gerenciamento de usuários." alt="" coords="87,5,211,31"/>
+<area shape="rect" title="Interface (Contrato) que o mundo externo enxerga." alt="" coords="87,5,211,31"/>
 <area shape="rect" href="Main_8cpp.html" title=" " alt="" coords="5,79,87,104"/>
 <area shape="poly" title=" " alt="" coords="122,41,64,81,61,76,119,36"/>
 <area shape="rect" href="Test_8cpp.html" title=" " alt="" coords="111,79,186,104"/>
 <area shape="poly" title=" " alt="" coords="151,44,151,79,146,79,146,44"/>
-<area shape="rect" href="UserManager_8cpp.html" title="Implementação concreta da lógica de gerenciamento de usuários." alt="" coords="211,79,345,104"/>
-<area shape="poly" title=" " alt="" coords="183,35,258,76,256,81,180,40"/>
+<area shape="rect" href="UserManager_8h.html" title="Declaração da classe concreta." alt="" coords="210,79,330,104"/>
+<area shape="poly" title=" " alt="" coords="182,35,251,76,249,81,179,40"/>
+<area shape="rect" href="UserManager_8cpp.html" title="Implementação da lógica." alt="" coords="203,152,337,177"/>
+<area shape="poly" title=" " alt="" coords="273,118,273,152,267,152,267,118"/>
 </map>
 </div>
 </div>
@@ -113,10 +115,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUserData.html">UserData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura simples para transportar dados do usuário (DTO).  <a href="structUserData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIUserManager.html">IUserManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface abstrata para manipulação de usuários.  <a href="classIUserManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -127,16 +127,12 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a05920273da4e409efd9d76678a1155f4" id="r_a05920273da4e409efd9d76678a1155f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="IUserManager_8h.html#a3b9cbc54f1c3c947cde09fce2abe9a66">USER_API</a> <a class="el" href="classIUserManager.html">IUserManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IUserManager_8h.html#a05920273da4e409efd9d76678a1155f4">CreateManager</a> ()</td></tr>
-<tr class="memdesc:a05920273da4e409efd9d76678a1155f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma instância do Gerenciador.  <br /></td></tr>
 <tr class="separator:a05920273da4e409efd9d76678a1155f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca10f70a2312a15943ebdf192b30d6e" id="r_a6ca10f70a2312a15943ebdf192b30d6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="IUserManager_8h.html#a3b9cbc54f1c3c947cde09fce2abe9a66">USER_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IUserManager_8h.html#a6ca10f70a2312a15943ebdf192b30d6e">DeleteManager</a> (<a class="el" href="classIUserManager.html">IUserManager</a> *manager)</td></tr>
-<tr class="memdesc:a6ca10f70a2312a15943ebdf192b30d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrói a instância e libera memória.  <br /></td></tr>
 <tr class="separator:a6ca10f70a2312a15943ebdf192b30d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface para o sistema de gerenciamento de usuários. </p>
-<dl class="section author"><dt>Author</dt><dd>Seu Nome </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<div class="textblock"><p>Interface (Contrato) que o mundo externo enxerga. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3b9cbc54f1c3c947cde09fce2abe9a66" name="a3b9cbc54f1c3c947cde09fce2abe9a66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b9cbc54f1c3c947cde09fce2abe9a66">&#9670;&#160;</a></span>USER_API</h2>
@@ -168,11 +164,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cria uma instância do Gerenciador. </p>
-<dl class="section return"><dt>Returns</dt><dd>Ponteiro para a interface <a class="el" href="classIUserManager.html" title="Interface abstrata para manipulação de usuários.">IUserManager</a>.</dd></dl>
-<p>Cria uma instância do Gerenciador.</p>
-<dl class="section return"><dt>Returns</dt><dd>Ponteiro para a interface genérica. </dd></dl>
-
 </div>
 </div>
 <a id="a6ca10f70a2312a15943ebdf192b30d6e" name="a6ca10f70a2312a15943ebdf192b30d6e"></a>
@@ -190,21 +181,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destrói a instância e libera memória. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">manager</td><td>Ponteiro para o gerenciador a ser destruído.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Destrói a instância e libera memória.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">manager</td><td>Ponteiro para a instância a ser deletada. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

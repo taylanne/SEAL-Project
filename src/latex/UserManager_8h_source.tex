@@ -1,0 +1,23 @@
+\doxysection{User\+Manager.\+h}
+\hypertarget{UserManager_8h_source}{}\label{UserManager_8h_source}\mbox{\hyperlink{UserManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IUserManager_8h}{IUserManager.h}}"{}}\ \textcolor{comment}{//\ Precisa\ conhecer\ a\ interface\ para\ herdar}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ Herdamos\ de\ IUserManager}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUserManager}{UserManager}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classIUserManager}{IUserManager}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::vector<UserData>\ \mbox{\hyperlink{classUserManager_a9aaa4cab2520cc7834590a5fae24ef0b}{listaUsuarios}};\ \textcolor{comment}{//\ Onde\ os\ dados\ ficam\ guardados}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Declaração\ dos\ métodos\ (Note\ o\ 'override')}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserManager_aca3ffd6c9c85bd1719ebb01e8f960600}{AdicionarUsuario}}(\textcolor{keyword}{const}\ std::string\&\ nome,\ \textcolor{keyword}{const}\ std::string\&\ telegram,\ \textcolor{keyword}{const}\ std::string\&\ data)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserManager_afa4e1d0418bc110458051b4306ab825a}{RemoverUsuario}}(\textcolor{keyword}{const}\ std::string\&\ telegramID)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<UserData>\ \mbox{\hyperlink{classUserManager_ac3ffad2f7df819adc59493ee38c79d51}{ListarUsuarios}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \};}
+
+\end{DoxyCode}

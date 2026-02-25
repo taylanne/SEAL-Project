@@ -1,0 +1,79 @@
+\doxysection{ISchedule\+Manager.\+h File Reference}
+\hypertarget{IScheduleManager_8h}{}\label{IScheduleManager_8h}\index{IScheduleManager.h@{IScheduleManager.h}}
+
+
+Interface abstrata para o gerenciamento de Escalas de limpeza/uso.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for ISchedule\+Manager.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{IScheduleManager_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{IScheduleManager_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structScheduleData}{Schedule\+Data}}
+\begin{DoxyCompactList}\small\item\em Estrutura de Transferência de Dados (DTO) para Escalas. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classIScheduleManager}{ISchedule\+Manager}}
+\begin{DoxyCompactList}\small\item\em Interface para manipulação de escalas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}{SCHEDULE\+\_\+\+API}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility("{}default"{})))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}{SCHEDULE\+\_\+\+API}} \mbox{\hyperlink{classIScheduleManager}{ISchedule\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{IScheduleManager_8h_ab6206df16d55b9ec204b5ce107ff3ca9}{Create\+Schedule\+Manager}} ()
+\item 
+\mbox{\hyperlink{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}{SCHEDULE\+\_\+\+API}} void \mbox{\hyperlink{IScheduleManager_8h_ad725e351ea01d086a5877c337d193347}{Delete\+Schedule\+Manager}} (\mbox{\hyperlink{classIScheduleManager}{ISchedule\+Manager}} \texorpdfstring{$\ast$}{*}manager)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface abstrata para o gerenciamento de Escalas de limpeza/uso. 
+
+Define as operações para associar um Morador, um Cômodo e um Período. \begin{DoxyAuthor}{Author}
+Seu Nome 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2026 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}\label{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149} 
+\index{IScheduleManager.h@{IScheduleManager.h}!SCHEDULE\_API@{SCHEDULE\_API}}
+\index{SCHEDULE\_API@{SCHEDULE\_API}!IScheduleManager.h@{IScheduleManager.h}}
+\doxysubsubsection{\texorpdfstring{SCHEDULE\_API}{SCHEDULE\_API}}
+{\footnotesize\ttfamily \#define SCHEDULE\+\_\+\+API~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility("{}default"{})))}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{IScheduleManager_8h_ab6206df16d55b9ec204b5ce107ff3ca9}\label{IScheduleManager_8h_ab6206df16d55b9ec204b5ce107ff3ca9} 
+\index{IScheduleManager.h@{IScheduleManager.h}!CreateScheduleManager@{CreateScheduleManager}}
+\index{CreateScheduleManager@{CreateScheduleManager}!IScheduleManager.h@{IScheduleManager.h}}
+\doxysubsubsection{\texorpdfstring{CreateScheduleManager()}{CreateScheduleManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}{SCHEDULE\+\_\+\+API}} \mbox{\hyperlink{classIScheduleManager}{ISchedule\+Manager}} \texorpdfstring{$\ast$}{*} Create\+Schedule\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{IScheduleManager_8h_ad725e351ea01d086a5877c337d193347}\label{IScheduleManager_8h_ad725e351ea01d086a5877c337d193347} 
+\index{IScheduleManager.h@{IScheduleManager.h}!DeleteScheduleManager@{DeleteScheduleManager}}
+\index{DeleteScheduleManager@{DeleteScheduleManager}!IScheduleManager.h@{IScheduleManager.h}}
+\doxysubsubsection{\texorpdfstring{DeleteScheduleManager()}{DeleteScheduleManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}{SCHEDULE\+\_\+\+API}} void Delete\+Schedule\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIScheduleManager}{ISchedule\+Manager}} \texorpdfstring{$\ast$}{*}}]{manager }\end{DoxyParamCaption})}
+

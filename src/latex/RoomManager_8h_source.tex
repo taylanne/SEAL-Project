@@ -1,0 +1,19 @@
+\doxysection{Room\+Manager.\+h}
+\hypertarget{RoomManager_8h_source}{}\label{RoomManager_8h_source}\mbox{\hyperlink{RoomManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IRoomManager_8h}{IRoomManager.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRoomManager}{RoomManager}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classIRoomManager}{IRoomManager}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<RoomData>\ \mbox{\hyperlink{classRoomManager_a304688484e3168686592f055a9205582}{listaComodos}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Sobrescrita\ dos\ métodos\ da\ interface}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classRoomManager_af3e55264863f59f9df421c85c20be9b2}{AdicionarComodo}}(\textcolor{keyword}{const}\ std::string\&\ nome,\ \textcolor{keyword}{const}\ std::string\&\ descricao)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \ \ std::vector<RoomData>\ \mbox{\hyperlink{classRoomManager_abe11ce8a47f25f2f3ea9698372f4ce6f}{ListarComodos}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,59 @@
+\doxysection{Room\+Manager.\+cpp File Reference}
+\hypertarget{RoomManager_8cpp}{}\label{RoomManager_8cpp}\index{RoomManager.cpp@{RoomManager.cpp}}
+
+
+Implementação dos métodos e regras de negócio de cômodos.  
+
+
+{\ttfamily \#include "{}Room\+Manager.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Room\+Manager.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{RoomManager_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIRoomManager}{IRoom\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{RoomManager_8cpp_abd5fce9d3e2673db1bc689d6df0f4347}{Create\+Room\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Cria uma nova instância concreta do gerenciador de cômodos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{RoomManager_8cpp_ad69c411c6855af687e23284a820e8f7e}{Delete\+Room\+Manager}} (\mbox{\hyperlink{classIRoomManager}{IRoom\+Manager}} \texorpdfstring{$\ast$}{*}manager)
+\begin{DoxyCompactList}\small\item\em Libera a memória da instância do gerenciador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação dos métodos e regras de negócio de cômodos. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{RoomManager_8cpp_abd5fce9d3e2673db1bc689d6df0f4347}\label{RoomManager_8cpp_abd5fce9d3e2673db1bc689d6df0f4347} 
+\index{RoomManager.cpp@{RoomManager.cpp}!CreateRoomManager@{CreateRoomManager}}
+\index{CreateRoomManager@{CreateRoomManager}!RoomManager.cpp@{RoomManager.cpp}}
+\doxysubsubsection{\texorpdfstring{CreateRoomManager()}{CreateRoomManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIRoomManager}{IRoom\+Manager}} \texorpdfstring{$\ast$}{*} Create\+Room\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria uma nova instância concreta do gerenciador de cômodos. 
+
+\begin{DoxyReturn}{Returns}
+Ponteiro para a interface \doxylink{classIRoomManager}{IRoom\+Manager}. 
+\end{DoxyReturn}
+\Hypertarget{RoomManager_8cpp_ad69c411c6855af687e23284a820e8f7e}\label{RoomManager_8cpp_ad69c411c6855af687e23284a820e8f7e} 
+\index{RoomManager.cpp@{RoomManager.cpp}!DeleteRoomManager@{DeleteRoomManager}}
+\index{DeleteRoomManager@{DeleteRoomManager}!RoomManager.cpp@{RoomManager.cpp}}
+\doxysubsubsection{\texorpdfstring{DeleteRoomManager()}{DeleteRoomManager()}}
+{\footnotesize\ttfamily void Delete\+Room\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIRoomManager}{IRoom\+Manager}} \texorpdfstring{$\ast$}{*}}]{manager }\end{DoxyParamCaption})}
+
+
+
+Libera a memória da instância do gerenciador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & Ponteiro para a instância a ser destruída. \\
+\hline
+\end{DoxyParams}

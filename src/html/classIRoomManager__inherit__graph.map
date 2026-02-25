@@ -1,0 +1,5 @@
+<map id="IRoomManager" name="IRoomManager">
+<area shape="rect" id="Node000001" title="Interface abstrata para manipulação de cômodos." alt="" coords="5,5,159,111"/>
+<area shape="rect" id="Node000002" href="$classRoomManager.html" title="Implementação concreta em memória para a gestão de cômodos." alt="" coords="5,159,159,244"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,124,85,159,79,159,79,124"/>
+</map>

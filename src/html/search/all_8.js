@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['telegramid_0',['telegramID',['../structUserData.html#a59cb606c0259cb7c97e9a75ba4d17270',1,'UserData']]],
-  ['test_2ecpp_1',['Test.cpp',['../Test_8cpp.html',1,'']]],
-  ['testarbloqueioduplicidade_2',['TestarBloqueioDuplicidade',['../Test_8cpp.html#aa55800e998fa564fc3c03e307cdb8d84',1,'Test.cpp']]],
-  ['testarcenarioaugusto_3',['TestarCenarioAugusto',['../Test_8cpp.html#a8545e683366e67b07468ba8541ede27c',1,'Test.cpp']]]
+  ['removerusuario_0',['removerusuario',['../classIUserManager.html#ade5723bcab6a36bb02914220e2144a0c',1,'IUserManager::RemoverUsuario()'],['../classUserManager.html#afa4e1d0418bc110458051b4306ab825a',1,'UserManager::RemoverUsuario()']]],
+  ['room_5fapi_1',['ROOM_API',['../IRoomManager_8h.html#aa065451f82faefbda94b99ba29966fb9',1,'IRoomManager.h']]],
+  ['roomdata_2',['RoomData',['../structRoomData.html',1,'']]],
+  ['roommanager_3',['RoomManager',['../classRoomManager.html',1,'']]],
+  ['roommanager_2ecpp_4',['RoomManager.cpp',['../RoomManager_8cpp.html',1,'']]],
+  ['roommanager_2eh_5',['RoomManager.h',['../RoomManager_8h.html',1,'']]]
 ];

@@ -1,0 +1,14 @@
+<map id="RoomManager.cpp" name="RoomManager.cpp">
+<area shape="rect" id="Node000001" title="Implementação dos métodos e regras de negócio de cômodos." alt="" coords="116,5,259,31"/>
+<area shape="rect" id="Node000002" href="$RoomManager_8h.html" title="Declaração da classe concreta de gerenciamento de cômodos." alt="" coords="59,79,187,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,33,145,70,141,67,175,29"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="211,79,291,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="200,29,234,67,230,70,196,33"/>
+<area shape="rect" id="Node000003" href="$IRoomManager_8h.html" title="Interface para o módulo de gerenciamento de cômodos." alt="" coords="5,152,137,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,106,90,142,86,139,113,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="135,225,197,251"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="132,103,153,151,165,211,160,212,147,153,127,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="42,225,101,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="74,178,74,212,69,212,69,178"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="88,175,141,215,138,219,85,179"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="TestRoom.cpp" name="TestRoom.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="123,5,237,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,85,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,33,81,74,78,70,157,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,79,179,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,32,158,68,154,65,172,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="194,152,257,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,30,220,138,215,140,181,32"/>
+<area shape="rect" id="Node000005" href="$IRoomManager_8h.html" title="Interface para o módulo de gerenciamento de cômodos." alt="" coords="254,79,386,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="204,28,286,70,284,75,201,33"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="306,106,253,146,250,141,303,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="291,152,349,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="323,104,323,138,317,138,317,104"/>
+</map>

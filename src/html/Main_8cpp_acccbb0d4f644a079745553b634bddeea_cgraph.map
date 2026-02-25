@@ -1,0 +1,9 @@
+<map id="MenuEscalas" name="MenuEscalas">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,70,112,95"/>
+<area shape="rect" id="Node000002" href="$classIScheduleManager.html#a3575a928825d635dad88c6c0975bce43" title="Adiciona uma nova escala no sistema." alt="" coords="160,5,371,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,67,179,46,180,52,106,73"/>
+<area shape="rect" id="Node000003" href="$Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09" title=" " alt="" coords="212,70,319,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,80,198,80,198,85,112,85"/>
+<area shape="rect" id="Node000004" href="$classIScheduleManager.html#a1a0af398df99f518ca90ba1826913644" title="Lista todas as escalas cadastradas." alt="" coords="172,120,359,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="106,93,180,114,179,119,105,98"/>
+</map>

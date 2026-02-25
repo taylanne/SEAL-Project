@@ -1,0 +1,104 @@
+\doxysection{Schedule\+Manager Class Reference}
+\hypertarget{classScheduleManager}{}\label{classScheduleManager}\index{ScheduleManager@{ScheduleManager}}
+
+
+{\ttfamily \#include $<$Schedule\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Schedule\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classScheduleManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Schedule\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classScheduleManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classScheduleManager_af2120a42b641eac0a75d32ee867419d7}{Adicionar\+Escala}} (const std\+::string \&comodo, const std\+::string \&morador, const std\+::string \&periodo) override
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova escala no sistema. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structScheduleData}{Schedule\+Data}} $>$ \mbox{\hyperlink{classScheduleManager_adb4a7c74bb9c8ec00097ffc594d8b882}{Listar\+Escalas}} () override
+\begin{DoxyCompactList}\small\item\em Lista todas as escalas cadastradas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classIScheduleManager}{ISchedule\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIScheduleManager_a81d3cd5776681cfa84433118b9b8c36b}{\texorpdfstring{$\sim$}{\string~}\+ISchedule\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structScheduleData}{Schedule\+Data}} $>$ \mbox{\hyperlink{classScheduleManager_a2624370180af7cedb1b67942bde1d40a}{lista\+Escalas}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classScheduleManager_af2120a42b641eac0a75d32ee867419d7}\label{classScheduleManager_af2120a42b641eac0a75d32ee867419d7} 
+\index{ScheduleManager@{ScheduleManager}!AdicionarEscala@{AdicionarEscala}}
+\index{AdicionarEscala@{AdicionarEscala}!ScheduleManager@{ScheduleManager}}
+\doxysubsubsection{\texorpdfstring{AdicionarEscala()}{AdicionarEscala()}}
+{\footnotesize\ttfamily bool Schedule\+Manager\+::\+Adicionar\+Escala (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{comodo,  }\item[{const std\+::string \&}]{morador,  }\item[{const std\+::string \&}]{periodo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adiciona uma nova escala no sistema. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comodo} & O nome do cômodo. \\
+\hline
+{\em morador} & O ID do morador. \\
+\hline
+{\em periodo} & O período definido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se cadastrado com sucesso, false se a exata escala já existir. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIScheduleManager_a3575a928825d635dad88c6c0975bce43}{ISchedule\+Manager}}.
+
+\Hypertarget{classScheduleManager_adb4a7c74bb9c8ec00097ffc594d8b882}\label{classScheduleManager_adb4a7c74bb9c8ec00097ffc594d8b882} 
+\index{ScheduleManager@{ScheduleManager}!ListarEscalas@{ListarEscalas}}
+\index{ListarEscalas@{ListarEscalas}!ScheduleManager@{ScheduleManager}}
+\doxysubsubsection{\texorpdfstring{ListarEscalas()}{ListarEscalas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structScheduleData}{Schedule\+Data}} $>$ Schedule\+Manager\+::\+Listar\+Escalas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Lista todas as escalas cadastradas. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Schedule\+Data$>$ com as escalas. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIScheduleManager_a1a0af398df99f518ca90ba1826913644}{ISchedule\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classScheduleManager_a2624370180af7cedb1b67942bde1d40a}\label{classScheduleManager_a2624370180af7cedb1b67942bde1d40a} 
+\index{ScheduleManager@{ScheduleManager}!listaEscalas@{listaEscalas}}
+\index{listaEscalas@{listaEscalas}!ScheduleManager@{ScheduleManager}}
+\doxysubsubsection{\texorpdfstring{listaEscalas}{listaEscalas}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structScheduleData}{Schedule\+Data}}$>$ Schedule\+Manager\+::lista\+Escalas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ScheduleManager_8h}{Schedule\+Manager.\+h}}\item 
+\mbox{\hyperlink{ScheduleManager_8cpp}{Schedule\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['telegramid_0',['telegramID',['../structUserData.html#a59cb606c0259cb7c97e9a75ba4d17270',1,'UserData']]]
+  ['periodo_0',['periodo',['../structScheduleData.html#a84caf1ad95b7fd6c481a4863bc760da4',1,'ScheduleData']]]
 ];

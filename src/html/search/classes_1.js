@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['userdata_0',['UserData',['../structUserData.html',1,'']]],
-  ['usermanager_1',['UserManager',['../classUserManager.html',1,'']]]
+  ['roomdata_0',['RoomData',['../structRoomData.html',1,'']]],
+  ['roommanager_1',['RoomManager',['../classRoomManager.html',1,'']]]
 ];

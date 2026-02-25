@@ -1,0 +1,103 @@
+\doxysection{ISchedule\+Manager Class Reference}
+\hypertarget{classIScheduleManager}{}\label{classIScheduleManager}\index{IScheduleManager@{IScheduleManager}}
+
+
+Interface para manipulação de escalas.  
+
+
+
+
+{\ttfamily \#include $<$ISchedule\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for ISchedule\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classIScheduleManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ISchedule\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classIScheduleManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIScheduleManager_a81d3cd5776681cfa84433118b9b8c36b}{\texorpdfstring{$\sim$}{\string~}\+ISchedule\+Manager}} ()
+\item 
+virtual bool \mbox{\hyperlink{classIScheduleManager_a3575a928825d635dad88c6c0975bce43}{Adicionar\+Escala}} (const std\+::string \&comodo, const std\+::string \&morador, const std\+::string \&periodo)=0
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova escala no sistema. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structScheduleData}{Schedule\+Data}} $>$ \mbox{\hyperlink{classIScheduleManager_a1a0af398df99f518ca90ba1826913644}{Listar\+Escalas}} ()=0
+\begin{DoxyCompactList}\small\item\em Lista todas as escalas cadastradas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface para manipulação de escalas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classIScheduleManager_a81d3cd5776681cfa84433118b9b8c36b}\label{classIScheduleManager_a81d3cd5776681cfa84433118b9b8c36b} 
+\index{IScheduleManager@{IScheduleManager}!````~IScheduleManager@{\texorpdfstring{$\sim$}{\string~}IScheduleManager}}
+\index{````~IScheduleManager@{\texorpdfstring{$\sim$}{\string~}IScheduleManager}!IScheduleManager@{IScheduleManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IScheduleManager()}{\string~IScheduleManager()}}
+{\footnotesize\ttfamily virtual ISchedule\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+ISchedule\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIScheduleManager_a3575a928825d635dad88c6c0975bce43}\label{classIScheduleManager_a3575a928825d635dad88c6c0975bce43} 
+\index{IScheduleManager@{IScheduleManager}!AdicionarEscala@{AdicionarEscala}}
+\index{AdicionarEscala@{AdicionarEscala}!IScheduleManager@{IScheduleManager}}
+\doxysubsubsection{\texorpdfstring{AdicionarEscala()}{AdicionarEscala()}}
+{\footnotesize\ttfamily virtual bool ISchedule\+Manager\+::\+Adicionar\+Escala (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{comodo,  }\item[{const std\+::string \&}]{morador,  }\item[{const std\+::string \&}]{periodo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adiciona uma nova escala no sistema. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comodo} & O nome do cômodo. \\
+\hline
+{\em morador} & O ID do morador. \\
+\hline
+{\em periodo} & O período definido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se cadastrado com sucesso, false se a exata escala já existir. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classScheduleManager_af2120a42b641eac0a75d32ee867419d7}{Schedule\+Manager}}.
+
+\Hypertarget{classIScheduleManager_a1a0af398df99f518ca90ba1826913644}\label{classIScheduleManager_a1a0af398df99f518ca90ba1826913644} 
+\index{IScheduleManager@{IScheduleManager}!ListarEscalas@{ListarEscalas}}
+\index{ListarEscalas@{ListarEscalas}!IScheduleManager@{IScheduleManager}}
+\doxysubsubsection{\texorpdfstring{ListarEscalas()}{ListarEscalas()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{structScheduleData}{Schedule\+Data}} $>$ ISchedule\+Manager\+::\+Listar\+Escalas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista todas as escalas cadastradas. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Schedule\+Data$>$ com as escalas. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classScheduleManager_adb4a7c74bb9c8ec00097ffc594d8b882}{Schedule\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{IScheduleManager_8h}{ISchedule\+Manager.\+h}}\end{DoxyCompactItemize}

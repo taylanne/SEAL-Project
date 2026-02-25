@@ -1,0 +1,114 @@
+\doxysection{Room\+Manager Class Reference}
+\hypertarget{classRoomManager}{}\label{classRoomManager}\index{RoomManager@{RoomManager}}
+
+
+Implementação concreta em memória para a gestão de cômodos.  
+
+
+
+
+{\ttfamily \#include $<$Room\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Room\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classRoomManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Room\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classRoomManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classRoomManager_af3e55264863f59f9df421c85c20be9b2}{Adicionar\+Comodo}} (const std\+::string \&nome, const std\+::string \&descricao) override
+\begin{DoxyCompactList}\small\item\em Adiciona um novo cômodo à lista de gerenciamento. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structRoomData}{Room\+Data}} $>$ \mbox{\hyperlink{classRoomManager_abe11ce8a47f25f2f3ea9698372f4ce6f}{Listar\+Comodos}} () override
+\begin{DoxyCompactList}\small\item\em Retorna a lista de todos os cômodos cadastrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classIRoomManager}{IRoom\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIRoomManager_a1f2a20b4c07bc1683211d857d068cdd6}{\texorpdfstring{$\sim$}{\string~}\+IRoom\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structRoomData}{Room\+Data}} $>$ \mbox{\hyperlink{classRoomManager_a304688484e3168686592f055a9205582}{lista\+Comodos}}
+\begin{DoxyCompactList}\small\item\em Lista sequencial armazenando os dados dos cômodos na RAM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação concreta em memória para a gestão de cômodos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classRoomManager_af3e55264863f59f9df421c85c20be9b2}\label{classRoomManager_af3e55264863f59f9df421c85c20be9b2} 
+\index{RoomManager@{RoomManager}!AdicionarComodo@{AdicionarComodo}}
+\index{AdicionarComodo@{AdicionarComodo}!RoomManager@{RoomManager}}
+\doxysubsubsection{\texorpdfstring{AdicionarComodo()}{AdicionarComodo()}}
+{\footnotesize\ttfamily bool Room\+Manager\+::\+Adicionar\+Comodo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{descricao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adiciona um novo cômodo à lista de gerenciamento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do cômodo (deve ser único). \\
+\hline
+{\em descricao} & Detalhes sobre o cômodo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o cômodo foi cadastrado com sucesso. 
+
+false se já existir um cômodo com o mesmo nome. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIRoomManager_a13466b1970515641cba0e6781279d0ec}{IRoom\+Manager}}.
+
+\Hypertarget{classRoomManager_abe11ce8a47f25f2f3ea9698372f4ce6f}\label{classRoomManager_abe11ce8a47f25f2f3ea9698372f4ce6f} 
+\index{RoomManager@{RoomManager}!ListarComodos@{ListarComodos}}
+\index{ListarComodos@{ListarComodos}!RoomManager@{RoomManager}}
+\doxysubsubsection{\texorpdfstring{ListarComodos()}{ListarComodos()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structRoomData}{Room\+Data}} $>$ Room\+Manager\+::\+Listar\+Comodos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retorna a lista de todos os cômodos cadastrados. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Room\+Data$>$ contendo os registros. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIRoomManager_ab9308bb166152438c6dc4e55f2ef6677}{IRoom\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classRoomManager_a304688484e3168686592f055a9205582}\label{classRoomManager_a304688484e3168686592f055a9205582} 
+\index{RoomManager@{RoomManager}!listaComodos@{listaComodos}}
+\index{listaComodos@{listaComodos}!RoomManager@{RoomManager}}
+\doxysubsubsection{\texorpdfstring{listaComodos}{listaComodos}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structRoomData}{Room\+Data}}$>$ Room\+Manager\+::lista\+Comodos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista sequencial armazenando os dados dos cômodos na RAM. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RoomManager_8h}{Room\+Manager.\+h}}\item 
+\mbox{\hyperlink{RoomManager_8cpp}{Room\+Manager.\+cpp}}\end{DoxyCompactItemize}

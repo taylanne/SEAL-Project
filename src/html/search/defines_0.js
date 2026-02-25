@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_5fapi_0',['USER_API',['../IUserManager_8h.html#a3b9cbc54f1c3c947cde09fce2abe9a66',1,'IUserManager.h']]]
+  ['room_5fapi_0',['ROOM_API',['../IRoomManager_8h.html#aa065451f82faefbda94b99ba29966fb9',1,'IRoomManager.h']]]
 ];

@@ -77,22 +77,32 @@ $(function() {
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &quot;<a class="el" href="IUserManager_8h_source.html">IUserManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="IRoomManager_8h_source.html">IRoomManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="IScheduleManager_8h_source.html">IScheduleManager.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="Main_8cpp__incl.png" border="0" usemap="#aMain_8cpp" alt=""/></div>
 <map name="aMain_8cpp" id="aMain_8cpp">
-<area shape="rect" title=" " alt="" coords="98,5,179,31"/>
+<area shape="rect" title=" " alt="" coords="214,5,295,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,85,104"/>
-<area shape="poly" title=" " alt="" coords="125,33,73,72,70,68,122,29"/>
+<area shape="poly" title=" " alt="" coords="222,33,93,77,92,72,220,28"/>
 <area shape="rect" title=" " alt="" coords="109,79,168,104"/>
-<area shape="poly" title=" " alt="" coords="141,31,141,65,136,65,136,31"/>
+<area shape="poly" title=" " alt="" coords="237,33,171,74,168,69,235,28"/>
 <area shape="rect" href="IUserManager_8h.html" title="Interface (Contrato) que o mundo externo enxerga." alt="" coords="193,79,317,104"/>
-<area shape="poly" title=" " alt="" coords="159,28,225,69,223,74,156,33"/>
-<area shape="rect" title=" " alt="" coords="183,152,241,177"/>
-<area shape="poly" title=" " alt="" coords="250,106,228,142,224,139,245,103"/>
-<area shape="rect" title=" " alt="" coords="266,152,329,177"/>
-<area shape="poly" title=" " alt="" coords="264,103,286,139,281,142,259,106"/>
+<area shape="poly" title=" " alt="" coords="257,31,257,65,252,65,252,31"/>
+<area shape="rect" href="IRoomManager_8h.html" title="Interface para o módulo de gerenciamento de cômodos." alt="" coords="341,79,473,104"/>
+<area shape="poly" title=" " alt="" coords="280,28,371,70,369,75,278,33"/>
+<area shape="rect" href="IScheduleManager_8h.html" title="Interface abstrata para o gerenciamento de Escalas de limpeza/uso." alt="" coords="497,79,650,104"/>
+<area shape="poly" title=" " alt="" coords="296,26,509,73,508,78,295,31"/>
+<area shape="rect" title=" " alt="" coords="335,152,393,177"/>
+<area shape="poly" title=" " alt="" coords="274,102,336,142,333,147,271,106"/>
+<area shape="rect" title=" " alt="" coords="418,152,481,177"/>
+<area shape="poly" title=" " alt="" coords="287,102,406,145,404,150,285,107"/>
+<area shape="poly" title=" " alt="" coords="402,106,380,142,376,139,397,103"/>
+<area shape="poly" title=" " alt="" coords="416,103,438,139,433,142,411,106"/>
+<area shape="poly" title=" " alt="" coords="541,107,407,151,406,146,539,101"/>
+<area shape="poly" title=" " alt="" coords="555,106,483,147,480,143,552,102"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -100,6 +110,12 @@ Include dependency graph for Main.cpp:</div>
 Functions</h2></td></tr>
 <tr class="memitem:af6441caa36ebc01e23bd4f7728ecfe09" id="r_af6441caa36ebc01e23bd4f7728ecfe09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09">LimparBuffer</a> ()</td></tr>
 <tr class="separator:af6441caa36ebc01e23bd4f7728ecfe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffafae7ab56a9493a32b244af41dc86" id="r_aaffafae7ab56a9493a32b244af41dc86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Main_8cpp.html#aaffafae7ab56a9493a32b244af41dc86">MenuMoradores</a> (<a class="el" href="classIUserManager.html">IUserManager</a> *gerenciador)</td></tr>
+<tr class="separator:aaffafae7ab56a9493a32b244af41dc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61dcb6bbc6c1180bce2ebbbb56eeeb4a" id="r_a61dcb6bbc6c1180bce2ebbbb56eeeb4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Main_8cpp.html#a61dcb6bbc6c1180bce2ebbbb56eeeb4a">MenuComodos</a> (<a class="el" href="classIRoomManager.html">IRoomManager</a> *gerenciador)</td></tr>
+<tr class="separator:a61dcb6bbc6c1180bce2ebbbb56eeeb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccbb0d4f644a079745553b634bddeea" id="r_acccbb0d4f644a079745553b634bddeea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Main_8cpp.html#acccbb0d4f644a079745553b634bddeea">MenuEscalas</a> (<a class="el" href="classIScheduleManager.html">IScheduleManager</a> *gerenciador)</td></tr>
+<tr class="separator:acccbb0d4f644a079745553b634bddeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -140,19 +156,137 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="Main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#aMain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="aMain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="aMain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,129,60,155"/>
-<area shape="rect" href="classIUserManager.html#a08caa2d869f63b13d9d6cb3c16f5329f" title=" " alt="" coords="108,5,340,31"/>
-<area shape="poly" title=" " alt="" coords="37,128,63,84,82,60,106,40,117,34,120,39,110,44,86,64,67,87,42,131"/>
-<area shape="rect" href="UserManager_8cpp.html#adede2d39d7e74b36493861bdf835e136" title=" " alt="" coords="163,55,285,80"/>
-<area shape="poly" title=" " alt="" coords="47,127,74,107,107,89,148,76,150,81,109,94,77,112,50,131"/>
-<area shape="rect" href="UserManager_8cpp.html#a0e085069a45e0c95c30011bfb4461c2d" title=" " alt="" coords="163,104,285,129"/>
-<area shape="poly" title=" " alt="" coords="60,136,149,124,149,129,61,141"/>
-<area shape="rect" href="Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09" title=" " alt="" coords="171,153,277,179"/>
-<area shape="poly" title=" " alt="" coords="61,143,157,155,157,160,60,148"/>
-<area shape="rect" href="classIUserManager.html#a57f52c374f4bb0fa4cfd8a0dd5d37484" title=" " alt="" coords="117,203,331,228"/>
-<area shape="poly" title=" " alt="" coords="52,153,78,171,109,188,135,197,133,202,107,192,75,175,49,157"/>
-<area shape="rect" href="classIUserManager.html#ade5723bcab6a36bb02914220e2144a0c" title=" " alt="" coords="109,252,339,277"/>
-<area shape="poly" title=" " alt="" coords="42,153,68,195,87,218,109,237,123,245,121,249,107,242,83,222,63,198,38,156"/>
+<area shape="rect" title=" " alt="" coords="5,203,60,228"/>
+<area shape="rect" href="UserManager_8cpp.html#adede2d39d7e74b36493861bdf835e136" title=" " alt="" coords="137,5,260,31"/>
+<area shape="poly" title=" " alt="" coords="33,202,39,169,52,125,74,80,89,58,106,40,123,29,126,34,110,44,93,62,78,82,57,127,45,170,38,203"/>
+<area shape="rect" href="RoomManager_8cpp.html#abd5fce9d3e2673db1bc689d6df0f4347" title="Cria uma nova instância concreta do gerenciador de cômodos." alt="" coords="119,55,279,80"/>
+<area shape="poly" title=" " alt="" coords="36,202,59,147,80,116,106,89,114,84,117,88,110,93,84,119,64,150,40,204"/>
+<area shape="rect" href="ScheduleManager_8cpp.html#a594ab65fd2e89e2b55741c1639e1d51a" title=" " alt="" coords="108,104,289,129"/>
+<area shape="poly" title=" " alt="" coords="41,200,68,169,107,138,119,132,122,137,109,143,72,173,45,204"/>
+<area shape="rect" href="UserManager_8cpp.html#a0e085069a45e0c95c30011bfb4461c2d" title=" " alt="" coords="137,153,260,179"/>
+<area shape="poly" title=" " alt="" coords="59,203,107,187,134,180,135,185,109,193,61,208"/>
+<area shape="rect" href="RoomManager_8cpp.html#ad69c411c6855af687e23284a820e8f7e" title="Libera a memória da instância do gerenciador." alt="" coords="119,203,279,228"/>
+<area shape="poly" title=" " alt="" coords="60,213,105,213,105,218,60,218"/>
+<area shape="rect" href="ScheduleManager_8cpp.html#a9a8fde66b89aade11099c030d55497b6" title=" " alt="" coords="108,252,289,277"/>
+<area shape="poly" title=" " alt="" coords="61,222,109,237,139,246,138,251,107,242,59,227"/>
+<area shape="rect" href="Main_8cpp.html#a61dcb6bbc6c1180bce2ebbbb56eeeb4a" title=" " alt="" coords="139,301,258,327"/>
+<area shape="poly" title=" " alt="" coords="46,226,72,257,109,286,127,295,125,300,107,291,69,261,42,230"/>
+<area shape="rect" href="Main_8cpp.html#acccbb0d4f644a079745553b634bddeea" title=" " alt="" coords="145,355,252,380"/>
+<area shape="poly" title=" " alt="" coords="41,227,65,280,85,310,110,336,134,350,131,354,106,340,80,313,60,282,36,229"/>
+<area shape="rect" href="Main_8cpp.html#aaffafae7ab56a9493a32b244af41dc86" title=" " alt="" coords="135,440,262,465"/>
+<area shape="poly" title=" " alt="" coords="39,227,62,301,82,347,110,390,134,413,161,431,158,435,131,417,106,393,78,349,57,303,34,229"/>
+<area shape="rect" href="classIRoomManager.html#a13466b1970515641cba0e6781279d0ec" title="Adiciona um novo cômodo à lista de gerenciamento." alt="" coords="337,252,581,277"/>
+<area shape="poly" title=" " alt="" coords="258,300,378,277,379,283,259,305"/>
+<area shape="rect" href="Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09" title=" " alt="" coords="406,301,513,327"/>
+<area shape="poly" title=" " alt="" coords="259,311,392,311,392,317,259,317"/>
+<area shape="rect" href="classIRoomManager.html#ab9308bb166152438c6dc4e55f2ef6677" title="Retorna a lista de todos os cômodos cadastrados." alt="" coords="346,203,573,228"/>
+<area shape="poly" title=" " alt="" coords="257,300,288,286,302,275,311,262,320,249,336,237,351,230,353,235,339,242,324,253,315,265,306,278,291,291,259,305"/>
+<area shape="poly" title=" " alt="" coords="252,354,392,325,393,330,253,359"/>
+<area shape="rect" href="classIScheduleManager.html#a3575a928825d635dad88c6c0975bce43" title="Adiciona uma nova escala no sistema." alt="" coords="354,415,565,455"/>
+<area shape="poly" title=" " alt="" coords="249,378,369,409,368,414,248,383"/>
+<area shape="rect" href="classIScheduleManager.html#a1a0af398df99f518ca90ba1826913644" title="Lista todas as escalas cadastradas." alt="" coords="366,351,553,391"/>
+<area shape="poly" title=" " alt="" coords="252,365,352,367,352,372,252,371"/>
+<area shape="poly" title=" " alt="" coords="220,438,288,389,301,375,310,362,320,349,336,337,363,325,392,318,393,323,365,330,339,342,324,353,314,365,305,378,291,393,223,442"/>
+<area shape="rect" href="classIUserManager.html#a08caa2d869f63b13d9d6cb3c16f5329f" title=" " alt="" coords="343,529,575,555"/>
+<area shape="poly" title=" " alt="" coords="224,463,275,490,338,515,367,524,366,529,336,521,273,494,221,468"/>
+<area shape="rect" href="classIUserManager.html#a57f52c374f4bb0fa4cfd8a0dd5d37484" title=" " alt="" coords="352,480,567,505"/>
+<area shape="poly" title=" " alt="" coords="263,460,363,475,362,480,262,465"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a61dcb6bbc6c1180bce2ebbbb56eeeb4a" name="a61dcb6bbc6c1180bce2ebbbb56eeeb4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61dcb6bbc6c1180bce2ebbbb56eeeb4a">&#9670;&#160;</a></span>MenuComodos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MenuComodos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIRoomManager.html">IRoomManager</a> *&#160;</td>
+          <td class="paramname"><em>gerenciador</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Main_8cpp_a61dcb6bbc6c1180bce2ebbbb56eeeb4a_cgraph.png" border="0" usemap="#aMain_8cpp_a61dcb6bbc6c1180bce2ebbbb56eeeb4a_cgraph" alt=""/></div>
+<map name="aMain_8cpp_a61dcb6bbc6c1180bce2ebbbb56eeeb4a_cgraph" id="aMain_8cpp_a61dcb6bbc6c1180bce2ebbbb56eeeb4a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,124,80"/>
+<area shape="rect" href="classIRoomManager.html#a13466b1970515641cba0e6781279d0ec" title="Adiciona um novo cômodo à lista de gerenciamento." alt="" coords="172,5,416,31"/>
+<area shape="poly" title=" " alt="" coords="117,52,171,39,212,31,213,36,173,45,118,57"/>
+<area shape="rect" href="Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09" title=" " alt="" coords="241,55,347,80"/>
+<area shape="poly" title=" " alt="" coords="124,65,227,65,227,70,124,70"/>
+<area shape="rect" href="classIRoomManager.html#ab9308bb166152438c6dc4e55f2ef6677" title="Retorna a lista de todos os cômodos cadastrados." alt="" coords="181,104,407,129"/>
+<area shape="poly" title=" " alt="" coords="122,77,173,89,219,99,218,104,171,94,121,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acccbb0d4f644a079745553b634bddeea" name="acccbb0d4f644a079745553b634bddeea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acccbb0d4f644a079745553b634bddeea">&#9670;&#160;</a></span>MenuEscalas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MenuEscalas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIScheduleManager.html">IScheduleManager</a> *&#160;</td>
+          <td class="paramname"><em>gerenciador</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Main_8cpp_acccbb0d4f644a079745553b634bddeea_cgraph.png" border="0" usemap="#aMain_8cpp_acccbb0d4f644a079745553b634bddeea_cgraph" alt=""/></div>
+<map name="aMain_8cpp_acccbb0d4f644a079745553b634bddeea_cgraph" id="aMain_8cpp_acccbb0d4f644a079745553b634bddeea_cgraph">
+<area shape="rect" title=" " alt="" coords="5,70,112,95"/>
+<area shape="rect" href="classIScheduleManager.html#a3575a928825d635dad88c6c0975bce43" title="Adiciona uma nova escala no sistema." alt="" coords="160,5,371,45"/>
+<area shape="poly" title=" " alt="" coords="105,67,179,46,180,52,106,73"/>
+<area shape="rect" href="Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09" title=" " alt="" coords="212,70,319,95"/>
+<area shape="poly" title=" " alt="" coords="112,80,198,80,198,85,112,85"/>
+<area shape="rect" href="classIScheduleManager.html#a1a0af398df99f518ca90ba1826913644" title="Lista todas as escalas cadastradas." alt="" coords="172,120,359,160"/>
+<area shape="poly" title=" " alt="" coords="106,93,180,114,179,119,105,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaffafae7ab56a9493a32b244af41dc86" name="aaffafae7ab56a9493a32b244af41dc86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaffafae7ab56a9493a32b244af41dc86">&#9670;&#160;</a></span>MenuMoradores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MenuMoradores </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIUserManager.html">IUserManager</a> *&#160;</td>
+          <td class="paramname"><em>gerenciador</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Main_8cpp_aaffafae7ab56a9493a32b244af41dc86_cgraph.png" border="0" usemap="#aMain_8cpp_aaffafae7ab56a9493a32b244af41dc86_cgraph" alt=""/></div>
+<map name="aMain_8cpp_aaffafae7ab56a9493a32b244af41dc86_cgraph" id="aMain_8cpp_aaffafae7ab56a9493a32b244af41dc86_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,132,80"/>
+<area shape="rect" href="classIUserManager.html#a08caa2d869f63b13d9d6cb3c16f5329f" title=" " alt="" coords="180,5,412,31"/>
+<area shape="poly" title=" " alt="" coords="124,52,179,39,219,31,220,36,181,45,125,57"/>
+<area shape="rect" href="Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09" title=" " alt="" coords="243,55,349,80"/>
+<area shape="poly" title=" " alt="" coords="133,65,229,65,229,70,133,70"/>
+<area shape="rect" href="classIUserManager.html#a57f52c374f4bb0fa4cfd8a0dd5d37484" title=" " alt="" coords="189,104,403,129"/>
+<area shape="poly" title=" " alt="" coords="128,77,224,98,223,104,127,83"/>
 </map>
 </div>
 

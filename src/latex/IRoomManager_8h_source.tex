@@ -1,0 +1,41 @@
+\doxysection{IRoom\+Manager.\+h}
+\hypertarget{IRoomManager_8h_source}{}\label{IRoomManager_8h_source}\mbox{\hyperlink{IRoomManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ Configuração\ de\ exportação/importação\ para\ Componentização\ (DLL/SO)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#if\ defined(\_WIN32)\ ||\ defined(\_WIN64)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ ROOMDLL\_EXPORTS}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ ROOM\_API\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ ROOM\_API\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \#define\ ROOM\_API\ \_\_attribute\_\_((visibility("{}default"{})))}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structRoomData}{RoomData}}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ \mbox{\hyperlink{structRoomData_ad88586cc5728d893e33925176626553d}{nome}};\ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ \mbox{\hyperlink{structRoomData_ad30556129be1a661a05a865abfd5108b}{descricao}};\ }
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIRoomManager}{IRoomManager}}\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classIRoomManager_a1f2a20b4c07bc1683211d857d068cdd6}{\string~IRoomManager}}()\ \{\}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIRoomManager_a13466b1970515641cba0e6781279d0ec}{AdicionarComodo}}(\textcolor{keyword}{const}\ std::string\&\ nome,\ \textcolor{keyword}{const}\ std::string\&\ descricao)\ =\ 0;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<RoomData>\ \mbox{\hyperlink{classIRoomManager_ab9308bb166152438c6dc4e55f2ef6677}{ListarComodos}}()\ =\ 0;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{comment}{//\ -\/-\/-\/\ Funções\ da\ Fábrica\ (Factory\ Pattern)\ -\/-\/-\/}}
+\DoxyCodeLine{00059\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{IRoomManager_8h_aa065451f82faefbda94b99ba29966fb9}{ROOM\_API}}\ \mbox{\hyperlink{classIRoomManager}{IRoomManager}}*\ \mbox{\hyperlink{IRoomManager_8h_a82c690a25dccabde0e0caca105cf37ed}{CreateRoomManager}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{IRoomManager_8h_aa065451f82faefbda94b99ba29966fb9}{ROOM\_API}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{IRoomManager_8h_a85bac79ede702f1a06e070b4d98ffee2}{DeleteRoomManager}}(\mbox{\hyperlink{classIRoomManager}{IRoomManager}}*\ manager);}
+\DoxyCodeLine{00071\ \}}
+
+\end{DoxyCode}

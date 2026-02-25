@@ -1,0 +1,9 @@
+<map id="TestarBloqueioDuplicidadeComodo" name="TestarBloqueioDuplicidadeComodo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,200,87"/>
+<area shape="rect" id="Node000002" href="$classIRoomManager.html#a13466b1970515641cba0e6781279d0ec" title="Adiciona um novo cômodo à lista de gerenciamento." alt="" coords="248,5,492,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,47,287,31,288,36,201,52"/>
+<area shape="rect" id="Node000003" href="$classIRoomManager.html#ab9308bb166152438c6dc4e55f2ef6677" title="Retorna a lista de todos os cômodos cadastrados." alt="" coords="257,55,483,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,65,243,65,243,70,200,70"/>
+<area shape="rect" id="Node000004" href="$TestRoom_8cpp.html#a5c783cb8e7c8a96e76121120470d6406" title=" " alt="" coords="347,104,393,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,83,334,108,333,113,200,88"/>
+</map>

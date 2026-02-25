@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['user_5fapi_0',['USER_API',['../IUserManager_8h.html#a3b9cbc54f1c3c947cde09fce2abe9a66',1,'IUserManager.h']]],
-  ['userdata_1',['UserData',['../structUserData.html',1,'']]],
-  ['usermanager_2',['UserManager',['../classUserManager.html',1,'']]],
-  ['usermanager_2ecpp_3',['UserManager.cpp',['../UserManager_8cpp.html',1,'']]],
-  ['usermanager_2eh_4',['UserManager.h',['../UserManager_8h.html',1,'']]]
+  ['schedule_5fapi_0',['SCHEDULE_API',['../IScheduleManager_8h.html#a286293d0f9ad69aa3517b7d0107b4149',1,'IScheduleManager.h']]],
+  ['scheduledata_1',['ScheduleData',['../structScheduleData.html',1,'']]],
+  ['schedulemanager_2',['ScheduleManager',['../classScheduleManager.html',1,'']]],
+  ['schedulemanager_2ecpp_3',['ScheduleManager.cpp',['../ScheduleManager_8cpp.html',1,'']]],
+  ['schedulemanager_2eh_4',['ScheduleManager.h',['../ScheduleManager_8h.html',1,'']]]
 ];

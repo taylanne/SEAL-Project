@@ -1,0 +1,9 @@
+<map id="MenuComodos" name="MenuComodos">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,124,80"/>
+<area shape="rect" id="Node000002" href="$classIRoomManager.html#a13466b1970515641cba0e6781279d0ec" title="Adiciona um novo cômodo à lista de gerenciamento." alt="" coords="172,5,416,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,52,171,39,212,31,213,36,173,45,118,57"/>
+<area shape="rect" id="Node000003" href="$Main_8cpp.html#af6441caa36ebc01e23bd4f7728ecfe09" title=" " alt="" coords="241,55,347,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,65,227,65,227,70,124,70"/>
+<area shape="rect" id="Node000004" href="$classIRoomManager.html#ab9308bb166152438c6dc4e55f2ef6677" title="Retorna a lista de todos os cômodos cadastrados." alt="" coords="181,104,407,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,77,173,89,219,99,218,104,171,94,121,83"/>
+</map>

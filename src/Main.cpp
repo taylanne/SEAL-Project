@@ -2,6 +2,7 @@
 #include <limits>
 #include "IUserManager.h"
 #include "IRoomManager.h"
+#include "IScheduleManager.h" // NOVO: Interface de Escalas
 
 void LimparBuffer() {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -72,17 +73,54 @@ void MenuComodos(IRoomManager* gerenciador) {
     } while (opcao != 0);
 }
 
+// --- SUBMENU DE ESCALAS (NOVO) ---
+void MenuEscalas(IScheduleManager* gerenciador) {
+    int opcao = 0;
+    do {
+        std::cout << "\n--- GESTAO DE ESCALAS ---\n";
+        std::cout << "1. Gerar Nova Escala\n";
+        std::cout << "2. Listar Escalas\n";
+        std::cout << "0. Voltar\n";
+        std::cout << "Opcao: ";
+        std::cin >> opcao;
+        LimparBuffer();
+
+        if (opcao == 1) {
+            std::string comodo, morador, periodo;
+            std::cout << "Nome do Comodo (ex: Cozinha): "; std::getline(std::cin, comodo);
+            std::cout << "ID do Morador (ex: @augusto): "; std::getline(std::cin, morador);
+            std::cout << "Periodo (ex: Segunda-feira): "; std::getline(std::cin, periodo);
+
+            if(gerenciador->AdicionarEscala(comodo, morador, periodo))
+                std::cout << ">>> Sucesso! Escala gerada.\n";
+            else
+                std::cout << ">>> Erro: Esta escala exata ja existe.\n";
+        }
+        else if (opcao == 2) {
+            auto lista = gerenciador->ListarEscalas();
+            std::cout << "\n--- ESCALAS CADASTRADAS ---\n";
+            for (const auto& e : lista) {
+                std::cout << "- Comodo: " << e.nomeComodo 
+                          << " | Responsavel: " << e.telegramMorador 
+                          << " | Periodo: " << e.periodo << "\n";
+            }
+        }
+    } while (opcao != 0);
+}
+
 // --- MENU PRINCIPAL ---
 int main() {
-    // Inicializa as duas DLLs/Bibliotecas
+    // Inicializa as TRÊS DLLs/Bibliotecas na memória
     IUserManager* gerenciadorUsuarios = CreateManager();
     IRoomManager* gerenciadorComodos = CreateRoomManager();
+    IScheduleManager* gerenciadorEscalas = CreateScheduleManager(); // NOVO
     
     int opcao = 0;
     do {
         std::cout << "\n====== SISTEMA SEAL ======\n";
         std::cout << "1. Menu de Moradores\n";
         std::cout << "2. Menu de Comodos\n";
+        std::cout << "3. Menu de Escalas\n"; // NOVO
         std::cout << "0. Sair do Sistema\n";
         std::cout << "Opcao: ";
         std::cin >> opcao;
@@ -91,13 +129,16 @@ int main() {
             MenuMoradores(gerenciadorUsuarios);
         } else if (opcao == 2) {
             MenuComodos(gerenciadorComodos);
+        } else if (opcao == 3) {
+            MenuEscalas(gerenciadorEscalas); // NOVO
         }
         
     } while (opcao != 0);
 
-    // Limpa a memória das duas bibliotecas ao sair
+    // Limpa a memória das três bibliotecas ao sair
     DeleteManager(gerenciadorUsuarios);
     DeleteRoomManager(gerenciadorComodos);
+    DeleteScheduleManager(gerenciadorEscalas); // NOVO
     
     return 0;
 }

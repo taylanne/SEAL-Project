@@ -1,0 +1,37 @@
+\doxysection{ISchedule\+Manager.\+h}
+\hypertarget{IScheduleManager_8h_source}{}\label{IScheduleManager_8h_source}\mbox{\hyperlink{IScheduleManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ Configuração\ para\ Componentização\ (Evita\ o\ erro\ de\ dllimport\ no\ Qt\ Windows)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#if\ defined(\_WIN32)\ ||\ defined(\_WIN64)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#define\ SCHEDULE\_API\ }}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#define\ SCHEDULE\_API\ \_\_attribute\_\_((visibility("{}default"{})))}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structScheduleData}{ScheduleData}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{structScheduleData_ad318cbc5ad6f8bb6b23372f17a8b8b29}{nomeComodo}};\ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{structScheduleData_a93725027409ddf703abaab0f5904c7c9}{telegramMorador}};\ }
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ \mbox{\hyperlink{structScheduleData_a84caf1ad95b7fd6c481a4863bc760da4}{periodo}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIScheduleManager}{IScheduleManager}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classIScheduleManager_a81d3cd5776681cfa84433118b9b8c36b}{\string~IScheduleManager}}()\ \{\}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIScheduleManager_a3575a928825d635dad88c6c0975bce43}{AdicionarEscala}}(\textcolor{keyword}{const}\ std::string\&\ comodo,\ \textcolor{keyword}{const}\ std::string\&\ morador,\ \textcolor{keyword}{const}\ std::string\&\ periodo)\ =\ 0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<ScheduleData>\ \mbox{\hyperlink{classIScheduleManager_a1a0af398df99f518ca90ba1826913644}{ListarEscalas}}()\ =\ 0;}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{comment}{//\ -\/-\/-\/\ Funções\ da\ Fábrica\ (Factory\ Pattern)\ -\/-\/-\/}}
+\DoxyCodeLine{00055\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}{SCHEDULE\_API}}\ \mbox{\hyperlink{classIScheduleManager}{IScheduleManager}}*\ \mbox{\hyperlink{IScheduleManager_8h_ab6206df16d55b9ec204b5ce107ff3ca9}{CreateScheduleManager}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{IScheduleManager_8h_a286293d0f9ad69aa3517b7d0107b4149}{SCHEDULE\_API}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{IScheduleManager_8h_ad725e351ea01d086a5877c337d193347}{DeleteScheduleManager}}(\mbox{\hyperlink{classIScheduleManager}{IScheduleManager}}*\ manager);}
+\DoxyCodeLine{00058\ \}}
+
+\end{DoxyCode}
